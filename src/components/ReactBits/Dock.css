@@ -1,0 +1,87 @@
+.dock-outer {
+  margin: 0 0.5rem;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dock-panel {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  width: fit-content;
+  gap: 0.6rem;
+  border-radius: 1.25rem;
+  background-color: rgba(10, 16, 30, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 0.5rem 0.5rem;
+  box-shadow: 
+    0 16px 36px -4px rgba(0, 0, 0, 0.8),
+    0 0 20px -2px rgba(6, 182, 212, 0.2),
+    0 1px 2px rgba(255, 255, 255, 0.1) inset;
+}
+
+.dock-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 4px 10px -1px rgba(0, 0, 0, 0.4),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.dock-item:hover,
+.dock-item:focus-visible {
+  border-color: rgba(6, 182, 212, 0.6);
+  background-color: rgba(18, 30, 58, 0.98);
+}
+
+.dock-item.active-dock-item {
+  border-color: rgba(6, 182, 212, 0.8);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(99, 102, 241, 0.25));
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.35);
+}
+
+.dock-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+}
+
+.dock-item:hover .dock-icon,
+.dock-item.active-dock-item .dock-icon {
+  color: #38bdf8;
+}
+
+.dock-label {
+  position: absolute;
+  top: -1.75rem;
+  left: 50%;
+  width: fit-content;
+  white-space: pre;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(8, 12, 24, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="192" viewBox="0 0 512 192">
+  <defs>
+    <!-- Background Spider-Man Red Gradient -->
+    <linearGradient id="spiderBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#990014"/>
+      <stop offset="25%" stop-color="#c1121f"/>
+      <stop offset="50%" stop-color="#df1629"/>
+      <stop offset="75%" stop-color="#c1121f"/>
+      <stop offset="100%" stop-color="#990014"/>
+    </linearGradient>
+
+    <!-- Hexagonal Suit Mesh Pattern -->
+    <pattern id="suitMesh" width="8" height="14" patternUnits="userSpaceOnUse">
+      <path d="M 4 0 L 8 2.5 L 8 7 L 4 9.5 L 0 7 L 0 2.5 Z" fill="none" stroke="#780000" stroke-width="0.7" opacity="0.65"/>
+      <path d="M 4 9.5 L 8 12 L 8 14 M 0 14 L 0 12 L 4 9.5" fill="none" stroke="#780000" stroke-width="0.7" opacity="0.65"/>
+    </pattern>
+
+    <!-- Web Line Shadow Filter -->
+    <filter id="webShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Suit Fabric Base -->
+  <rect width="512" height="192" fill="url(#spiderBg)"/>
+  <rect width="512" height="192" fill="url(#suitMesh)"/>
+
+  <!-- 2. Dark Borders & Reinforcement Stitching -->
+  <rect x="0" y="0" width="512" height="10" fill="#08080a"/>
+  <rect x="0" y="182" width="512" height="10" fill="#08080a"/>
+  <line x1="0" y1="13" x2="512" y2="13" stroke="#ff4d6d" stroke-width="1" stroke-dasharray="4,4" opacity="0.8"/>
+  <line x1="0" y1="179" x2="512" y2="179" stroke="#ff4d6d" stroke-width="1" stroke-dasharray="4,4" opacity="0.8"/>
+
+  <!-- 3. Webbing System -->
+  <g filter="url(#webShadow)">
+    <!-- Longitudinal Web Lines -->
+    <line x1="0" y1="28" x2="512" y2="28" stroke="#101014" stroke-width="3"/>
+    <line x1="0" y1="62" x2="512" y2="62" stroke="#101014" stroke-width="3"/>
+    <line x1="0" y1="96" x2="512" y2="96" stroke="#101014" stroke-width="3.5"/>
+    <line x1="0" y1="130" x2="512" y2="130" stroke="#101014" stroke-width="3"/>
+    <line x1="0" y1="164" x2="512" y2="164" stroke="#101014" stroke-width="3"/>
+
+    <!-- Concentric Web Arcs (Repeating every 64px) -->
+    <!-- Tile 1 (x: 0..64) -->
+    <path d="M 0 28 Q 16 45 0 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 0 62 Q 20 79 0 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 0 96 Q 20 113 0 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 0 130 Q 16 147 0 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 2 (x: 64) -->
+    <path d="M 64 28 Q 80 45 64 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 64 62 Q 84 79 64 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 64 96 Q 84 113 64 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 64 130 Q 80 147 64 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 3 (x: 128) -->
+    <path d="M 128 28 Q 144 45 128 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 128 62 Q 148 79 128 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 128 96 Q 148 113 128 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 128 130 Q 144 147 128 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 4 (x: 192) -->
+    <path d="M 192 28 Q 208 45 192 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 192 62 Q 212 79 192 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 192 96 Q 212 113 192 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 192 130 Q 208 147 192 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 5 (x: 256) - Reverse curve for dynamic web tension -->
+    <path d="M 256 28 Q 272 45 256 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 256 62 Q 276 79 256 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 256 96 Q 276 113 256 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 256 130 Q 272 147 256 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 6 (x: 320) -->
+    <path d="M 320 28 Q 336 45 320 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 320 62 Q 340 79 320 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 320 96 Q 340 113 320 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 320 130 Q 336 147 320 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 7 (x: 384) -->
+    <path d="M 384 28 Q 400 45 384 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 384 62 Q 404 79 384 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 384 96 Q 404 113 384 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 384 130 Q 400 147 384 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 8 (x: 448) -->
+    <path d="M 448 28 Q 464 45 448 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 448 62 Q 468 79 448 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 448 96 Q 468 113 448 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 448 130 Q 464 147 448 164" fill="none" stroke="#101014" stroke-width="3"/>
+
+    <!-- Tile 9 boundary wrapping (x: 512) -->
+    <path d="M 512 28 Q 528 45 512 62" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 512 62 Q 532 79 512 96" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 512 96 Q 532 113 512 130" fill="none" stroke="#101014" stroke-width="3"/>
+    <path d="M 512 130 Q 528 147 512 164" fill="none" stroke="#101014" stroke-width="3"/>
+  </g>
+
+  <!-- 4. Subtle 3D Web Raised Specular Highlights -->
+  <g opacity="0.35" stroke="#ffffff" stroke-width="0.8" fill="none">
+    <line x1="0" y1="27.2" x2="512" y2="27.2"/>
+    <line x1="0" y1="61.2" x2="512" y2="61.2"/>
+    <line x1="0" y1="95.2" x2="512" y2="95.2"/>
+    <line x1="0" y1="129.2" x2="512" y2="129.2"/>
+    <line x1="0" y1="163.2" x2="512" y2="163.2"/>
+  </g>
+
+  <!-- 5. Spider-Man Emblems at x=128 and x=384 -->
+  <g transform="translate(128, 96) scale(0.65)">
+    <!-- Spider Body -->
+    <ellipse cx="0" cy="0" rx="4.5" ry="9" fill="#08080a"/>
+    <circle cx="0" cy="-11" r="3.5" fill="#08080a"/>
+    <!-- Legs Left -->
+    <path d="M -2 -7 Q -14 -18 -18 -8" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -3 -3 Q -20 -10 -22 4" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -3 3 Q -22 10 -19 22" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -2 7 Q -14 20 -12 28" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Legs Right -->
+    <path d="M 2 -7 Q 14 -18 18 -8" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 3 -3 Q 20 -10 22 4" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 3 3 Q 22 10 19 22" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 2 7 Q 14 20 12 28" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(384, 96) scale(0.65)">
+    <!-- Spider Body -->
+    <ellipse cx="0" cy="0" rx="4.5" ry="9" fill="#08080a"/>
+    <circle cx="0" cy="-11" r="3.5" fill="#08080a"/>
+    <!-- Legs Left -->
+    <path d="M -2 -7 Q -14 -18 -18 -8" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -3 -3 Q -20 -10 -22 4" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -3 3 Q -22 10 -19 22" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M -2 7 Q -14 20 -12 28" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Legs Right -->
+    <path d="M 2 -7 Q 14 -18 18 -8" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 3 -3 Q 20 -10 22 4" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 3 3 Q 22 10 19 22" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 2 7 Q 14 20 12 28" stroke="#08080a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
+

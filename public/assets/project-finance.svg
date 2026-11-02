@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fin-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#fin-bg)" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- App Window Bar -->
+  <rect width="800" height="42" fill="#060911" rx="16" />
+  <circle cx="28" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="46" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="64" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+  <text x="400" y="25" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">pulse.finance.app/wallet/monthly-summary</text>
+
+  <!-- Left Card: Balance Card -->
+  <rect x="35" y="70" width="345" height="180" rx="14" fill="#1e1b4b" stroke="rgba(99,102,241,0.3)" stroke-width="1.5" />
+  <text x="60" y="105" fill="#a5b4fc" font-family="sans-serif" font-size="12">Total Balance</text>
+  <text x="60" y="145" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="700">$14,892.40</text>
+  <text x="60" y="175" fill="#34d399" font-family="sans-serif" font-size="11">▲ +$2,450.00 this month</text>
+
+  <rect x="60" y="200" width="135" height="32" rx="6" fill="#4f46e5" />
+  <text x="127" y="220" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">+ Add Income</text>
+
+  <rect x="210" y="200" width="145" height="32" rx="6" fill="#312e81" stroke="rgba(255,255,255,0.1)" />
+  <text x="282" y="220" fill="#e0e7ff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">- Add Expense</text>
+
+  <!-- Right Card: Category Breakdown -->
+  <rect x="405" y="70" width="360" height="180" rx="14" fill="#111827" stroke="rgba(255,255,255,0.06)" />
+  <text x="430" y="105" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Category Expense Distribution</text>
+
+  <!-- Donut Chart representation -->
+  <circle cx="500" cy="170" r="45" fill="none" stroke="#1e293b" stroke-width="14" />
+  <circle cx="500" cy="170" r="45" fill="none" stroke="#6366f1" stroke-width="14" stroke-dasharray="160 282" stroke-dashoffset="0" />
+  <circle cx="500" cy="170" r="45" fill="none" stroke="#06b6d4" stroke-width="14" stroke-dasharray="70 282" stroke-dashoffset="-160" />
+  <circle cx="500" cy="170" r="45" fill="none" stroke="#f59e0b" stroke-width="14" stroke-dasharray="52 282" stroke-dashoffset="-230" />
+  <text x="500" y="174" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">58%</text>
+
+  <!-- Legend -->
+  <circle cx="590" cy="140" r="4" fill="#6366f1" />
+  <text x="605" y="144" fill="#cbd5e1" font-family="sans-serif" font-size="10">Software &amp; Servers (58%)</text>
+
+  <circle cx="590" cy="170" r="4" fill="#06b6d4" />
+  <text x="605" y="174" fill="#cbd5e1" font-family="sans-serif" font-size="10">Workspace &amp; Gear (25%)</text>
+
+  <circle cx="590" cy="200" r="4" fill="#f59e0b" />
+  <text x="605" y="204" fill="#cbd5e1" font-family="sans-serif" font-size="10">Daily Living (17%)</text>
+
+  <!-- Bottom Table: Recent Transactions -->
+  <rect x="35" y="270" width="730" height="200" rx="12" fill="#111827" stroke="rgba(255,255,255,0.06)" />
+  <text x="60" y="300" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Recent Transactions</text>
+
+  <line x1="60" y1="315" x2="735" y2="315" stroke="#1f2937" stroke-width="1" />
+
+  <!-- Row 1 -->
+  <text x="60" y="340" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">AWS Cloud Hosting Server</text>
+  <text x="60" y="356" fill="#94a3b8" font-family="sans-serif" font-size="9">Subscription • Automated</text>
+  <text x="735" y="348" fill="#ef4444" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">-$84.50</text>
+
+  <line x1="60" y1="370" x2="735" y2="370" stroke="#1f2937" stroke-width="1" />
+
+  <!-- Row 2 -->
+  <text x="60" y="395" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Freelance Web App Milestone 2</text>
+  <text x="60" y="411" fill="#94a3b8" font-family="sans-serif" font-size="9">Direct Deposit • Client</text>
+  <text x="735" y="403" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">+$1,500.00</text>
+
+  <line x1="60" y1="425" x2="735" y2="425" stroke="#1f2937" stroke-width="1" />
+
+  <!-- Row 3 -->
+  <text x="60" y="450" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">GitHub Copilot &amp; Figma Seat</text>
+  <text x="60" y="466" fill="#94a3b8" font-family="sans-serif" font-size="9">Productivity Tools</text>
+  <text x="735" y="458" fill="#ef4444" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">-$32.00</text>
+</svg>

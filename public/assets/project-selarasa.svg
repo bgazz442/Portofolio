@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="selarasa-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2a180e" />
+      <stop offset="100%" stop-color="#140b06" />
+    </linearGradient>
+    <linearGradient id="warm-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="card-warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#382115" />
+      <stop offset="100%" stop-color="#24140b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#selarasa-bg)" stroke="rgba(249,115,22,0.25)" stroke-width="2" />
+
+  <!-- Top Window Bar -->
+  <rect width="800" height="42" fill="#140b06" rx="16" />
+  <circle cx="28" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="46" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="64" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+  <rect x="250" y="10" width="300" height="22" rx="6" fill="#24140b" opacity="0.8" />
+  <text x="400" y="25" fill="#fdba74" font-family="sans-serif" font-size="11" text-anchor="middle">rasaaa.vercel.app</text>
+
+  <!-- Navbar -->
+  <rect x="30" y="60" width="740" height="46" rx="10" fill="#24140b" stroke="rgba(249,115,22,0.2)" />
+  <text x="55" y="88" fill="#ffffff" font-family="serif" font-size="18" font-weight="900" letter-spacing="1">SELARASA <tspan fill="#f97316">GUDSKUL</tspan></text>
+  
+  <text x="460" y="87" fill="#fdba74" font-family="sans-serif" font-size="11" font-weight="600">Menu Pilihan</text>
+  <text x="560" y="87" fill="#fed7aa" font-family="sans-serif" font-size="11">Tentang Kami</text>
+  <rect x="660" y="70" width="95" height="26" rx="6" fill="url(#warm-orange)" />
+  <text x="707" y="87" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Pesan Sekarang</text>
+
+  <!-- Hero Content -->
+  <rect x="30" y="120" width="460" height="210" rx="12" fill="url(#card-warm)" stroke="rgba(249,115,22,0.3)" />
+  <rect x="55" y="145" width="135" height="22" rx="11" fill="rgba(249,115,22,0.2)" />
+  <text x="122" y="160" fill="#f97316" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">✨ CULINARY EXPERIENCE</text>
+  
+  <text x="55" y="200" fill="#ffffff" font-family="serif" font-size="24" font-weight="800">Sensasi Rasa Otentik</text>
+  <text x="55" y="230" fill="#fed7aa" font-family="serif" font-size="24" font-weight="800">Sentuhan Kreatif Modern</text>
+  <text x="55" y="265" fill="#d6d3d1" font-family="sans-serif" font-size="12">Menghadirkan hidangan istimewa dengan bahan pilihan dan estetika penyajian terbaik.</text>
+
+  <rect x="55" y="285" width="130" height="32" rx="6" fill="url(#warm-orange)" />
+  <text x="120" y="305" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Eksplorasi Menu</text>
+
+  <!-- Right Visual Cafe Banner -->
+  <rect x="510" y="120" width="260" height="210" rx="14" fill="#331c11" stroke="rgba(251,146,60,0.3)" />
+  <circle cx="640" cy="200" r="55" fill="#432415" stroke="#f97316" stroke-width="2" stroke-dasharray="4 3" />
+  <text x="640" y="208" fill="#fed7aa" font-family="sans-serif" font-size="36" text-anchor="middle">☕🍽️</text>
+  <text x="640" y="280" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Signature Dishes</text>
+  <text x="640" y="300" fill="#fdba74" font-family="sans-serif" font-size="10" text-anchor="middle">Fresh Ingredients Daily</text>
+
+  <!-- Menu Preview Cards Below -->
+  <rect x="30" y="345" width="235" height="125" rx="10" fill="#24140b" stroke="rgba(249,115,22,0.15)" />
+  <text x="48" y="375" fill="#f97316" font-family="sans-serif" font-size="14">🍜</text>
+  <text x="48" y="400" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">Artisanal Noodle</text>
+  <text x="48" y="420" fill="#a8a29e" font-family="sans-serif" font-size="10">Tekstur kenyal dengan kuah rempah khas.</text>
+  <text x="48" y="450" fill="#f97316" font-family="sans-serif" font-size="11" font-weight="700">Rp 38.000</text>
+
+  <rect x="282" y="345" width="235" height="125" rx="10" fill="#24140b" stroke="rgba(249,115,22,0.15)" />
+  <text x="300" y="375" fill="#f97316" font-family="sans-serif" font-size="14">🍛</text>
+  <text x="300" y="400" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">Special Rice Bowl</text>
+  <text x="300" y="420" fill="#a8a29e" font-family="sans-serif" font-size="10">Daging marinasi gurih disajikan hangat.</text>
+  <text x="300" y="450" fill="#f97316" font-family="sans-serif" font-size="11" font-weight="700">Rp 42.000</text>
+
+  <rect x="535" y="345" width="235" height="125" rx="10" fill="#24140b" stroke="rgba(249,115,22,0.15)" />
+  <text x="553" y="375" fill="#f97316" font-family="sans-serif" font-size="14">🧋</text>
+  <text x="553" y="400" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">Artisan Beverages</text>
+  <text x="553" y="420" fill="#a8a29e" font-family="sans-serif" font-size="10">Kopi signature &amp; racikan teh segar.</text>
+  <text x="553" y="450" fill="#f97316" font-family="sans-serif" font-size="11" font-weight="700">Rp 25.000</text>
+</svg>

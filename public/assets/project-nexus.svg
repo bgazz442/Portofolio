@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nexus-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="chart-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="accent-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#nexus-bg)" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Top App Window Bar -->
+  <rect width="800" height="42" fill="#060911" rx="16" />
+  <circle cx="28" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="46" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="64" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+  <rect x="250" y="10" width="300" height="22" rx="6" fill="#1e293b" opacity="0.6" />
+  <text x="400" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" text-anchor="middle">nexus.enterprise.io/analytics/overview</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="42" width="160" height="458" fill="#070b14" />
+  <rect x="20" y="65" width="90" height="14" rx="4" fill="#06b6d4" opacity="0.8" />
+  
+  <rect x="15" y="105" width="130" height="32" rx="6" fill="#1e293b" opacity="0.5" />
+  <rect x="25" y="115" width="12" height="12" rx="3" fill="#06b6d4" />
+  <text x="48" y="125" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Dashboard</text>
+
+  <rect x="25" y="155" width="12" height="12" rx="3" fill="#64748b" />
+  <text x="48" y="165" fill="#94a3b8" font-family="sans-serif" font-size="11">Inventory</text>
+
+  <rect x="25" y="195" width="12" height="12" rx="3" fill="#64748b" />
+  <text x="48" y="205" fill="#94a3b8" font-family="sans-serif" font-size="11">Reports</text>
+
+  <rect x="25" y="235" width="12" height="12" rx="3" fill="#64748b" />
+  <text x="48" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">Audit Logs</text>
+
+  <!-- Main Content Area -->
+  <!-- Header row inside dashboard -->
+  <text x="190" y="80" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="700">Analytics &amp; Resource Suite</text>
+  <rect x="670" y="62" width="105" height="28" rx="6" fill="url(#accent-bar)" />
+  <text x="722" y="80" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">+ New Report</text>
+
+  <!-- Metric KPI Cards -->
+  <!-- Card 1 -->
+  <rect x="190" y="105" width="185" height="85" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <text x="206" y="130" fill="#94a3b8" font-family="sans-serif" font-size="11">Total Revenue</text>
+  <text x="206" y="160" fill="#38bdf8" font-family="sans-serif" font-size="20" font-weight="700">$284,950</text>
+  <rect x="315" y="122" width="48" height="18" rx="4" fill="#065f46" />
+  <text x="339" y="135" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">+18.4%</text>
+
+  <!-- Card 2 -->
+  <rect x="390" y="105" width="185" height="85" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <text x="406" y="130" fill="#94a3b8" font-family="sans-serif" font-size="11">Active Nodes</text>
+  <text x="406" y="160" fill="#a78bfa" font-family="sans-serif" font-size="20" font-weight="700">1,420 Live</text>
+  <rect x="515" y="122" width="48" height="18" rx="4" fill="#312e81" />
+  <text x="539" y="135" fill="#818cf8" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">99.9%</text>
+
+  <!-- Card 3 -->
+  <rect x="590" y="105" width="185" height="85" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <text x="606" y="130" fill="#94a3b8" font-family="sans-serif" font-size="11">Throughput</text>
+  <text x="606" y="160" fill="#34d399" font-family="sans-serif" font-size="20" font-weight="700">48.6 ms</text>
+  <rect x="715" y="122" width="48" height="18" rx="4" fill="#065f46" />
+  <text x="739" y="135" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">Optimal</text>
+
+  <!-- Large Area Chart -->
+  <rect x="190" y="210" width="385" height="260" rx="12" fill="#111827" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <text x="210" y="240" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Real-Time Traffic &amp; Transactions</text>
+  
+  <!-- Chart Grid Lines -->
+  <line x1="210" y1="270" x2="550" y2="270" stroke="#1f2937" stroke-width="1" />
+  <line x1="210" y1="320" x2="550" y2="320" stroke="#1f2937" stroke-width="1" />
+  <line x1="210" y1="370" x2="550" y2="370" stroke="#1f2937" stroke-width="1" />
+  <line x1="210" y1="420" x2="550" y2="420" stroke="#1f2937" stroke-width="1" />
+
+  <!-- Area Fill -->
+  <path d="M210,410 C260,370 290,390 340,320 C380,260 420,300 470,240 C510,270 530,220 550,230 L550,420 L210,420 Z" fill="url(#chart-grad)" />
+  <!-- Area Line -->
+  <path d="M210,410 C260,370 290,390 340,320 C380,260 420,300 470,240 C510,270 530,220 550,230" fill="none" stroke="#06b6d4" stroke-width="3" />
+  <circle cx="470" cy="240" r="4.5" fill="#06b6d4" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Right Side Donut / Distribution Table -->
+  <rect x="590" y="210" width="185" height="260" rx="12" fill="#111827" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+  <text x="606" y="240" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Stock Status</text>
+
+  <!-- Mini Progress Bars -->
+  <text x="606" y="275" fill="#94a3b8" font-family="sans-serif" font-size="10">Cloud Storage (82%)</text>
+  <rect x="606" y="285" width="153" height="6" rx="3" fill="#1e293b" />
+  <rect x="606" y="285" width="125" height="6" rx="3" fill="#06b6d4" />
+
+  <text x="606" y="325" fill="#94a3b8" font-family="sans-serif" font-size="10">Database Nodes (64%)</text>
+  <rect x="606" y="335" width="153" height="6" rx="3" fill="#1e293b" />
+  <rect x="606" y="335" width="98" height="6" rx="3" fill="#6366f1" />
+
+  <text x="606" y="375" fill="#94a3b8" font-family="sans-serif" font-size="10">Sync Queue (94%)</text>
+  <rect x="606" y="385" width="153" height="6" rx="3" fill="#1e293b" />
+  <rect x="606" y="385" width="144" height="6" rx="3" fill="#10b981" />
+
+  <rect x="606" y="420" width="153" height="32" rx="6" fill="#1e293b" stroke="rgba(6,182,212,0.2)" stroke-width="1" />
+  <text x="682" y="440" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">View Full Audit →</text>
+</svg>

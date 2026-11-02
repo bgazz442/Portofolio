@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aura-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#aura-bg)" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- App Window Bar -->
+  <rect width="800" height="42" fill="#060911" rx="16" />
+  <circle cx="28" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="46" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="64" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+  <text x="400" y="25" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">aura.app/projects/sprint-v2/kanban</text>
+
+  <!-- Workspace Header -->
+  <text x="35" y="78" fill="#ffffff" font-family="sans-serif" font-size="17" font-weight="700">🚀 Core Platform Sprint v2.4</text>
+  <rect x="670" y="60" width="95" height="28" rx="6" fill="#3b82f6" />
+  <text x="717" y="78" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">+ Add Task</text>
+
+  <!-- Kanban Column 1: To Do -->
+  <rect x="35" y="105" width="225" height="365" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.05)" />
+  <circle cx="55" cy="130" r="4" fill="#64748b" />
+  <text x="68" y="134" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">To Do</text>
+  <rect x="220" y="122" width="24" height="16" rx="4" fill="#1e293b" />
+  <text x="232" y="134" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">3</text>
+
+  <!-- Card 1-1 -->
+  <rect x="45" y="150" width="205" height="90" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)" />
+  <rect x="55" y="162" width="60" height="16" rx="4" fill="#312e81" />
+  <text x="85" y="174" fill="#818cf8" font-family="sans-serif" font-size="9" text-anchor="middle">DATABASE</text>
+  <text x="55" y="198" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Optimize Eloquent indexing</text>
+  <text x="55" y="222" fill="#94a3b8" font-family="sans-serif" font-size="10">⏱ Oct 24 • 💬 4</text>
+
+  <!-- Card 1-2 -->
+  <rect x="45" y="250" width="205" height="90" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)" />
+  <rect x="55" y="262" width="60" height="16" rx="4" fill="#065f46" />
+  <text x="85" y="274" fill="#34d399" font-family="sans-serif" font-size="9" text-anchor="middle">SECURITY</text>
+  <text x="55" y="298" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">JWT Token Refresh logic</text>
+  <text x="55" y="322" fill="#94a3b8" font-family="sans-serif" font-size="10">⏱ Oct 28 • 💬 2</text>
+
+  <!-- Kanban Column 2: In Progress -->
+  <rect x="285" y="105" width="225" height="365" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.05)" />
+  <circle cx="305" cy="130" r="4" fill="#38bdf8" />
+  <text x="318" y="134" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">In Progress</text>
+  <rect x="470" y="122" width="24" height="16" rx="4" fill="#1e293b" />
+  <text x="482" y="134" fill="#38bdf8" font-family="sans-serif" font-size="10" text-anchor="middle">2</text>
+
+  <!-- Card 2-1 (Active dragging look) -->
+  <rect x="295" y="150" width="205" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="305" y="162" width="60" height="16" rx="4" fill="#083344" />
+  <text x="335" y="174" fill="#38bdf8" font-family="sans-serif" font-size="9" text-anchor="middle">FRONTEND</text>
+  <text x="305" y="198" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Interactive Kanban DND</text>
+  <rect x="305" y="210" width="185" height="4" rx="2" fill="#0f172a" />
+  <rect x="305" y="210" width="130" height="4" rx="2" fill="#38bdf8" />
+  <text x="305" y="234" fill="#94a3b8" font-family="sans-serif" font-size="10">70% Done • Assigned: Bagas</text>
+
+  <!-- Kanban Column 3: Done -->
+  <rect x="535" y="105" width="230" height="365" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.05)" />
+  <circle cx="555" cy="130" r="4" fill="#10b981" />
+  <text x="568" y="134" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Completed</text>
+  <rect x="720" y="122" width="24" height="16" rx="4" fill="#1e293b" />
+  <text x="732" y="134" fill="#34d399" font-family="sans-serif" font-size="10" text-anchor="middle">5</text>
+
+  <!-- Card 3-1 -->
+  <rect x="545" y="150" width="210" height="85" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)" />
+  <rect x="555" y="162" width="60" height="16" rx="4" fill="#064e3b" />
+  <text x="585" y="174" fill="#34d399" font-family="sans-serif" font-size="9" text-anchor="middle">RELEASE</text>
+  <text x="555" y="196" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Markdown Editor v1.0</text>
+  <text x="555" y="218" fill="#34d399" font-family="sans-serif" font-size="10">✓ Merged &amp; Verified</text>
+</svg>
