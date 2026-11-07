@@ -257,7 +257,7 @@ export const personalData = {
       role: "Frontend Developer",
       year: "2025",
       liveUrl: "https://bank-nusantara-syariah-25.vercel.app/",
-      githubUrl: "https://github.com/",
+      githubUrl: "https://github.com/bgazz442/bank-nusantara-syariah",
       details: {
         overview: "Website resmi Bank Nusantara Syariah (BNS) dibangun untuk menghadirkan pengalaman perbankan syariah modern yang transparan, mudah diakses, dan sesuai dengan prinsip-prinsip syariat Islam di era digital.",
         problem: "Kebutuhan nasabah akan informasi layanan finansial syariah yang jelas, simulasi perhitungan bagi hasil yang transparan, serta navigasi digital yang intuitif dan cepat.",
@@ -283,7 +283,7 @@ export const personalData = {
       role: "Frontend & UI/UX Designer",
       year: "2025",
       liveUrl: "https://rasaaa.vercel.app/",
-      githubUrl: "https://github.com/",
+      githubUrl: "https://github.com/bgazz442/rasaaa",
       details: {
         overview: "Selarasa Gudskul adalah platform digital untuk brand kuliner yang mengedepankan cita rasa otentik dengan presentasi modern dan sentuhan visual yang menggugah selera.",
         problem: "Banyak bisnis kuliner kesulitan mengkomunikasikan keunikan rasa dan atmosfer cafe/resto mereka melalui platform web yang seringkali kaku dan kurang interaktif.",
@@ -298,28 +298,28 @@ export const personalData = {
       }
     },
     {
-      id: "aura-workspace",
+      id: "catatin",
       isFeatured: false,
-      title: "Aura Note & Task Collaboration",
-      tagline: "Aplikasi Manajemen Tugas Kolaboratif dengan Markdown & Kanban Board",
-      shortDescription: "Aplikasi produktivitas minimalis dengan dukungan markdown editor, papan kanban interaktif drag-and-drop, dan pelacakan prioritas proyek.",
-      thumbnail: "/assets/project-workspace.svg",
-      tags: ["JavaScript", "Laravel", "Tailwind CSS", "REST API"],
-      role: "Frontend & Backend Developer",
-      year: "2024",
-      liveUrl: "https://github.com/",
-      githubUrl: "https://github.com/",
+      title: "CatatIN — Catatan Belajar Digital",
+      tagline: "Catat, Pahami, Raih Prestasi",
+      shortDescription: "Aplikasi catatan belajar digital untuk siswa SMK RPL, dengan pengelolaan materi berdasarkan kategori, pencarian, dan fitur favorit.",
+      thumbnail: "/assets/project-catatin.png",
+      tags: ["Laravel", "PHP", "Blade", "Tailwind CSS", "MySQL"],
+      role: "Full-Stack Developer",
+      year: "2026",
+      githubUrl: "https://github.com/bgazz442/CatatIN",
       details: {
-        overview: "Aura Workspace diciptakan untuk mempermudah tim kecil dan individu dalam mengorganisir tugas harian serta catatan proyek dengan tampilan yang tenang dan bebas distraksi.",
-        problem: "Alat manajemen tugas yang ada seringkali terlalu berat dan penuh dengan fitur yang tidak esensial sehingga memperlambat alur kerja harian.",
-        solution: "Menghadirkan antarmuka minimalis dengan respons instan tanpa reload halaman, fokus pada kecepatan pencatatan dan kejelasan visual tugas.",
+        overview: "CatatIN adalah aplikasi catatan belajar digital yang dirancang untuk membantu siswa SMK, khususnya jurusan Rekayasa Perangkat Lunak, menyimpan dan mengelola materi pelajaran dengan lebih teratur.",
+        problem: "Materi belajar yang tersebar di berbagai catatan membuatnya sulit untuk ditata dan ditemukan kembali saat dibutuhkan.",
+        solution: "Menyediakan ruang catatan terpusat dengan kategori pelajaran, pencarian, dan penanda favorit agar materi lebih mudah dikelola dan diakses.",
         features: [
-          "Kanban board responsif dengan drag and drop intuitif",
-          "Editor catatan rich-text dengan preview Markdown real-time",
-          "Pengingat batas waktu (due date) dan label warna kustom",
-          "Pencarian kilat berbasis keyboard shortcut (Ctrl+K)"
+          "Membuat, melihat, mengubah, dan menghapus catatan belajar",
+          "Mengelompokkan materi berdasarkan kategori atau mata pelajaran",
+          "Mencari dan menyaring catatan, termasuk daftar khusus favorit",
+          "Dashboard dengan statistik dan catatan terbaru",
+          "Autentikasi pengguna untuk mengelola catatan secara personal"
         ],
-        contribution: "Mengembangkan komponen drag-and-drop, state handler lokal, dan backend API penyimpanan catatan."
+        contribution: "Mengembangkan aplikasi full-stack menggunakan Laravel dan Blade, termasuk pengelolaan catatan, pencarian dan filter, autentikasi, serta antarmuka responsif dengan Tailwind CSS."
       }
     }
   ],
