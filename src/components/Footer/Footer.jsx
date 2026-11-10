@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowUp } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '../UI/Icons';
 import { personalData } from '../../data/portfolioData';
@@ -45,12 +44,6 @@ export default function Footer({ onNavigate }) {
               className="hover:text-cyan-400 transition-colors cursor-pointer"
             >
               Hobbies
-            </button>
-            <button 
-              onClick={() => onNavigate('skills')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
-            >
-              Skills
             </button>
             <button 
               onClick={() => onNavigate('projects')} 

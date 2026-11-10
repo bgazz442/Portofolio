@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import DynamicIslandNavbar from './components/Navbar/DynamicIslandNavbar';
 import MobileDockNavbar from './components/Navbar/MobileDockNavbar';
 import HeroSection from './components/Hero/HeroSection';
 import AboutSection from './components/About/AboutSection';
 import HobbiesSection from './components/Hobbies/HobbiesSection';
 import HobbyDetailView from './components/Hobbies/HobbyDetailView';
-import SkillsSection from './components/Skills/SkillsSection';
 import ProjectsSection from './components/Projects/ProjectsSection';
 import ContactSection from './components/Contact/ContactSection';
 import Footer from './components/Footer/Footer';
@@ -44,7 +43,7 @@ export default function App() {
   useEffect(() => {
     if (activeHobbyDetail) return;
 
-    const sectionIds = ['home', 'about', 'hobbies', 'skills', 'projects', 'contact'];
+    const sectionIds = ['home', 'about', 'hobbies', 'projects', 'contact'];
 
     // Direct top & bottom boundary tracking for instantaneous, neat updates
     const handleScroll = () => {
@@ -152,7 +151,6 @@ export default function App() {
               onOpenHobbyDetail={(hobby) => setActiveHobbyDetail(hobby)} 
               onModalStateChange={setIsModalOpen}
             />
-            <SkillsSection />
             <ProjectsSection onModalStateChange={setIsModalOpen} />
             <ContactSection />
           </main>

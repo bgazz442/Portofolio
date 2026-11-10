@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { 
   Home, 
   User, 
   Sparkles, 
-  Code2, 
   Layers, 
   Mail 
 } from 'lucide-react';
@@ -21,7 +20,6 @@ export default function DynamicIslandNavbar({ activeSection, onNavigate, isHidde
     { id: 'home', label: 'Home', icon: Home },
     { id: 'about', label: 'About', icon: User },
     { id: 'hobbies', label: 'Hobbies', icon: Sparkles },
-    { id: 'skills', label: 'Skills', icon: Code2 },
     { id: 'projects', label: 'Projects', icon: Layers },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];

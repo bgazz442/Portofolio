@@ -1,9 +1,7 @@
-import React from 'react';
 import { 
   Home, 
   User, 
   Sparkles, 
-  Code2, 
   Layers, 
   Mail 
 } from 'lucide-react';
@@ -30,12 +28,6 @@ export default function MobileDockNavbar({ activeSection, onNavigate, isHidden =
       label: 'Hobbies',
       onClick: () => onNavigate('hobbies'),
       className: activeSection === 'hobbies' ? 'active-dock-item' : ''
-    },
-    {
-      icon: <Code2 className={`w-5 h-5 transition-colors ${activeSection === 'skills' ? 'text-cyan-400' : 'text-slate-300'}`} />,
-      label: 'Skills',
-      onClick: () => onNavigate('skills'),
-      className: activeSection === 'skills' ? 'active-dock-item' : ''
     },
     {
       icon: <Layers className={`w-5 h-5 transition-colors ${activeSection === 'projects' ? 'text-cyan-400' : 'text-slate-300'}`} />,

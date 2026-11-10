@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Sparkles, 
-  ExternalLink, 
-  ArrowRight, 
-  Eye
+  ExternalLink,
+  ArrowRight
 } from 'lucide-react';
 import { GithubIcon } from '../UI/Icons';
 import SectionHeading from '../UI/SectionHeading';
@@ -90,22 +89,15 @@ export default function ProjectsSection({ onModalStateChange }) {
 
                   {/* Action Buttons */}
                   <div className="flex flex-wrap items-center gap-3 pt-3">
-                    <button
-                      onClick={() => handleOpenProject(featuredProject)}
-                      className="btn-primary text-xs md:text-sm py-2.5 cursor-pointer"
-                    >
-                      <Eye className="w-4 h-4" />
-                      <span>Deep Dive Case Study</span>
-                    </button>
-                    {featuredProject.liveUrl && (
+                    {featuredProject.githubUrl && (
                       <a
-                        href={featuredProject.liveUrl}
+                        href={featuredProject.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-secondary text-xs md:text-sm py-2.5"
+                        className="btn-primary text-xs md:text-sm py-2.5"
                       >
                         <ExternalLink className="w-4 h-4" />
-                        <span>Live Preview</span>
+                        <span>Kunjungi GitHub</span>
                       </a>
                     )}
                     {featuredProject.githubUrl && (
@@ -114,8 +106,8 @@ export default function ProjectsSection({ onModalStateChange }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2.5 rounded-full bg-slate-900/80 border border-white/10 hover:border-cyan-500/40 hover:text-cyan-400 transition-all text-slate-300"
-                        title="View Source Code"
-                        aria-label="GitHub Repository"
+                        title="Buka profil GitHub"
+                        aria-label="Buka profil GitHub"
                       >
                         <GithubIcon className="w-5 h-5" />
                       </a>
@@ -125,24 +117,27 @@ export default function ProjectsSection({ onModalStateChange }) {
 
                 {/* Right Visual Column */}
                 <div className="lg:col-span-6">
-                  <div 
-                    onClick={() => handleOpenProject(featuredProject)}
-                    className="relative rounded-2xl overflow-hidden border border-white/15 bg-slate-950 aspect-video group/img cursor-pointer shadow-2xl"
+                  <a
+                    href={featuredProject.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative block rounded-2xl overflow-hidden border border-white/15 bg-slate-950 aspect-video group/img shadow-2xl"
+                    aria-label="Kunjungi profil GitHub bgazz442"
                   >
-                    <img 
-                      src={featuredProject.thumbnail} 
+                    <img
+                      src={featuredProject.thumbnail}
                       alt={featuredProject.title}
                       className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end justify-between p-4">
                       <span className="text-xs font-mono text-cyan-300 bg-slate-900/90 px-3 py-1 rounded-full border border-cyan-500/30">
-                        Click to view full architecture
+                        Buka profil GitHub
                       </span>
                       <div className="p-2 rounded-full bg-cyan-500 text-white shadow-lg group-hover/img:scale-110 transition-transform">
                         <ArrowRight className="w-4 h-4" />
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
 
               </div>

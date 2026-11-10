@@ -175,76 +175,19 @@ export const personalData = {
     }
   ],
 
-  // [SKILLS] - Dikelompokkan rapi tanpa persentase palsu
-  skillCategories: [
-    {
-      id: "frontend",
-      name: "Frontend Development",
-      description: "Membangun antarmuka modern yang cepat, responsif, dan interaktif.",
-      skills: [
-        { name: "HTML5", level: "Semantic & SEO", category: "Core" },
-        { name: "CSS3 / Modern CSS", level: "Custom Layouts & Animations", category: "Styling" },
-        { name: "JavaScript (ES6+)", level: "Core & Asynchronous", category: "Language" },
-        { name: "React.js", level: "Hooks, Context & Component System", category: "Framework" },
-        { name: "Tailwind CSS", level: "Rapid Design Systems & Utilities", category: "Styling" },
-        { name: "TypeScript", level: "Type-Safe Architecture", category: "Language" },
-        { name: "Responsive Design", level: "Cross-Device UX Optimization", category: "Design" }
-      ]
-    },
-    {
-      id: "backend",
-      name: "Backend Development",
-      description: "Membangun sistem server yang aman, efisien, dan siap berkembang.",
-      skills: [
-        { name: "PHP", level: "OOP & Modern Standards", category: "Language" },
-        { name: "Laravel", level: "Fullstack, Eloquent ORM & APIs", category: "Framework" },
-        { name: "MySQL & Relational DB", level: "Data Modeling & Indexing", category: "Database" },
-        { name: "RESTful API Design", level: "Endpoints, Auth & JSON Specs", category: "Architecture" },
-        { name: "Node.js (Express)", level: "Server-side Services", category: "Runtime" }
-      ]
-    },
-    {
-      id: "tools",
-      name: "Tools & Workflow",
-      description: "Perangkat dan standar yang digunakan dalam siklus pengembangan harian.",
-      skills: [
-        { name: "Git & Version Control", level: "Branching & GitFlow", category: "VCS" },
-        { name: "GitHub", level: "CI/CD & Repository Management", category: "DevOps" },
-        { name: "VS Code", level: "Productive Development Suite", category: "IDE" },
-        { name: "Figma", level: "UI Prototyping & Inspection", category: "Design" },
-        { name: "Postman", level: "API Testing & Documentation", category: "Testing" },
-        { name: "Vite", level: "Modern Frontend Tooling", category: "Build" }
-      ]
-    }
-  ],
-
   // [PROJECT] - Featured & Secondary Projects
   projects: [
     {
-      id: "nexus-analytics",
+      id: "github-profile",
       isFeatured: true,
-      title: "Nexus Platform — Enterprise Analytics & SaaS Suite",
-      tagline: "Modern Dashboard SaaS dengan Real-Time Data Visualization & Inventory Management",
-      shortDescription: "Platform manajemen data komprehensif berbasis web dengan visualisasi analitik real-time, manajemen inventaris cerdas, dan sistem otentikasi multi-peran.",
-      thumbnail: "/assets/project-nexus.svg",
-      tags: ["React", "Laravel", "Tailwind CSS", "MySQL", "REST API", "Chart.js"],
-      role: "Lead Full-Stack Developer",
-      year: "2025",
-      liveUrl: "https://github.com/",
-      githubUrl: "https://github.com/",
-      details: {
-        overview: "Nexus Platform dirancang untuk mengatasi tantangan sinkronisasi data antar cabang operasional bisnis. Menggabungkan frontend reaktif yang sangat responsif dengan backend Laravel yang tangguh untuk memproses transaksi secara real-time.",
-        problem: "Sebelumnya, proses pelaporan inventaris dilakukan secara manual dan lambat, menyebabkan inkonsistensi stok dan keterlambatan pengambilan keputusan manajemen.",
-        solution: "Membangun sistem terpusat dengan arsitektur modular, caching cerdas, dan visualisasi metrik bisnis interaktif yang dapat diakses dari perangkat apa pun.",
-        features: [
-          "Real-time analytics dashboard dengan grafik performa interaktif",
-          "Sistem Role-Based Access Control (Super Admin, Manager, Staff)",
-          "Ekspor laporan otomatis dalam format PDF dan Excel",
-          "Notifikasi stok kritis dan aktivitas audit log lengkap",
-          "Dark mode native dengan UI minimalis berkinerja tinggi"
-        ],
-        contribution: "Merancang arsitektur basis data, mengembangkan seluruh API endpoints di Laravel, serta membangun antarmuka web interaktif menggunakan React dan Tailwind CSS."
-      }
+      title: "GitHub — Bagas Chandra Nirvana",
+      tagline: "Lihat profil dan proyek-proyek saya di GitHub",
+      shortDescription: "Jelajahi repositori, proyek, dan aktivitas coding saya di GitHub.",
+      thumbnail: "/assets/github-profile.png",
+      tags: ["GitHub", "Repositories", "Web Development"],
+      role: "GitHub Profile",
+      year: "bgazz442",
+      githubUrl: "https://github.com/bgazz442",
     },
     {
       id: "bank-nusantara-syariah",
@@ -327,7 +270,7 @@ export const personalData = {
   // [EMAIL], [GITHUB], [LINKEDIN] & Social Links
   contact: {
     email: "bagasmnoy@gmail.com",
-    github: "https://github.com/",
+    github: "https://github.com/bgazz442",
     linkedin: "https://www.linkedin.com/in/bagas-chandra-n-73b64a38a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     instagram: "https://www.instagram.com/not.thegas?igsi=NmV6YXNqd201MjM4",
     locationDisplay: "Indonesia (Open to Worldwide Remote & On-site)",
